@@ -37,11 +37,11 @@ body {
 }
 
 :is(h1, h2, h3, h4, h5, h6) { font-weight: var(--font-weight-bold); }
-h1 { font-size: 220% }
-h2 { font-size: 180% }
-h3 { font-size: 140% }
-h4 { font-size: 110% }
-h5 { font-size: 90% }
+h1 { font-size: 260% }
+h2 { font-size: 200% }
+h3 { font-size: 180% }
+h4 { font-size: 120% }
+h5 { font-size: 100% }
 h6 { font-size: 70% }
 
 section {
@@ -79,8 +79,8 @@ section > nav {
 /******************************product******************************/
 
 .product {
-    width: 1000px;
-    height: 550px;
+    width: 950px;
+    height: 520px;
     margin: 100px auto 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -116,6 +116,38 @@ section > nav {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.product-info {
+    align-self: center;
+}
+
+.product-info > h5 {
+    color: var(--Orange);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.product-info > h1 { margin-bottom: 30px; }
+
+.product-info > p {
+    line-height: 25px;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 20px;
+}
+
+.product-info--price > h3 { display: inline-block; }
+.product-info--price > h4 {
+    display: inline-block;
+    margin-left: 10px;
+    color: var(--Orange);
+    background-color: var(--Pale-orange);
+    padding: 5px;
+}
+.product-info--price > h5 {
+    color: var(--Grayish-blue);
+    margin-top: 5px;
+    text-decoration: line-through;
 }
 
 /*******************************************************************/
